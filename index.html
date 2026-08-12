@@ -4775,29 +4775,5 @@ function initLoginClock(){
   populateEmpSelect();
 })();
 </script>
-  <!-- KODE FIREBASE REALTIME DATABASE -->
-<script type="module">
-  // 1. Import SDK Firebase melalui CDN (URL online)
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-  import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
-
-  // 2. Configuration milik Anda
-  const firebaseConfig = {
-    apiKey: "AIzaSyCzlBOxDm-1rNZmqtMp4xy5t0m0TCfJQwc",
-    authDomain: "hris-aplikasi-sim-sdm.firebaseapp.com",
-    projectId: "hris-aplikasi-sim-sdm",
-    storageBucket: "hris-aplikasi-sim-sdm.firebasestorage.app",
-    messagingSenderId: "494724522137",
-    appId: "1:494724522137:web:564e50fc70730c1d219808",
-    databaseURL: "https://hris-aplikasi-sim-sdm-default-rtdb.firebaseio.com" // Sesuaikan jika beda URL
-  };
-
-  // 3. Inisialisasi Firebase & Database
-  const app = initializeApp(firebaseConfig);
-  const db = getDatabase(app);
-
-  // 4. Contoh tempat menulis logika simpan & baca data kamu di sini
-  console.log("Firebase berhasil terhubung!");
-</script>
 </body>
 </html>
